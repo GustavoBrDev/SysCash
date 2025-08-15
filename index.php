@@ -15,20 +15,35 @@
 
 <body>
     <header id="topo">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">PHP Profissional</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php"><i class="fas fa-id-card"></i>&nbsp;Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center me-2" href="index.php">
+            <img src="imagens/logo.png" alt="Logo" class="img-fluid" style="max-height:40px;">
+        </a>
+
+        <!-- Botão hamburguer (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-2">
+                    <a class="nav-link active text-white" aria-current="page" href="index.php">
+                        <i class="fas fa-home"></i>&nbsp;Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="login.php">
+                        <i class="fas fa-id-card"></i>&nbsp;Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     </header>
     <main>
         <!-- Carrossel de itens -->
@@ -40,8 +55,8 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <img src="imagens/contasAReceber.jpg"  width="100%" height="100%"/>
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="imagens/contasAReceber.jpg" width="100%" height="100%">
                     </svg>
 
                     <div class="container">
@@ -53,7 +68,7 @@
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <img src="imagens/fonte.jpg"  width="100%" height="100%"/>
+                        <img src="imagens/fonte.jpg" width="100%" height="100%">
                     </svg>
 
                     <div class="container">
@@ -65,7 +80,7 @@
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <img src="imagens/contasAPagar.jpg"  width="100%" height="100%"/>
+                        <img src="imagens/contasAPagar.jpg" width="100%" height="100%">
                     </svg>
 
                     <div class="container">
@@ -92,7 +107,7 @@
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle d-flex justify-content-center align-content-center" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Contas a Receber</title>
-                        <img src="imagens/icones/contasAReceberIcon.png"  width="50%" height="50%"/>
+                        <img src="imagens/icones/contasAReceberIcon.png" width="50%" height="50%" />
                     </svg>
                     <h2>Contas a Receber</h2>
                     <p>Controle os seus recebimentos</p>
@@ -101,7 +116,7 @@
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle d-flex justify-content-center align-content-center" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Favorecidos</title>
-                        <img src="imagens/icones/fonteIcon.png"  width="50%" height="50%"/>
+                        <img src="imagens/icones/fonteIcon.png" width="50%" height="50%" />
                     </svg>
                     <h2>Fontes</h2>
                     <p>Cadastre a fonte de seus recebimentos e pagamentos</p>
@@ -110,7 +125,7 @@
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle d-flex justify-content-center align-content-center" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Contas a Pagar</title>
-                        <img src="imagens/icones/contasAPagarIcon.png"  width="50%" height="50%"/>
+                        <img src="imagens/icones/contasAPagarIcon.png" width="50%" height="50%" />
                     </svg>
 
                     <h2>Contas a Pagar</h2>
