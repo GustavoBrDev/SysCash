@@ -60,21 +60,14 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
 </head>
 
 <body>
-    <header id="topo">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">TDS WEB 2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php"><i class="fas fa-id-card"></i>&nbsp;Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<header id="topo">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success d-flex justify-content-between">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center me-2" href="index.php">
+            <img src="imagens/logo.png" alt="Logo" class="img-fluid" style="max-height:40px;">
+        </a>
+    </div>
+</nav>
     </header>
     <main class="form-signin">
         <?php
@@ -90,25 +83,28 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         unset($_SESSION["erros"]);
         ?>
         <form id="formlogin" action="login.php" method="post">
-            <h1 class="h3 mb-3 fw-normal">Favor logar-se</h1>
-            <div class="form-floating">
+            <h1 class="h3 mb-3 fw-normal">Realize Login</h1>
+            <div class="form-floating mb-3">
                 <input type="texto" class="form-control" id="login" name="login" maxlength="10" placeholder="Login" required="required"> <label for="login">Login
                 </label>
             </div>
-            <div class="form-floating">
+            <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="senha" name="senha" maxlength="15" placeholder="Senha"> <label for="senha">Senha</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Logar</button>
+            <button class="w-100 btn btn-lg btn-success mb-3" type="submit">Logar</button>
         </form>
         <p class="text-center"><a href="cadastro_inicial.php">Cadastrar-se!</a></p>
     </main>
     <footer class="container">
         <hr class="featurette-divider">
+        <p class="float-end">
+            <a href="#topo">Voltar ao topo</a>
+        </p>
         <p>
             &copy; 2021–<script>
                 document.write(new Date().getFullYear())
             </script>
-            | Syscash - O Seu Sistema de Finanças | Alexandre -
+            | Syscash - O Seu Sistema de Finanças | <a href="https://github.com/GustavoBrDev">Gustavo Stinghen</a> & Alexandre -
             <a href="https://www.youtube.com/channel/UCUeidwLoy7YK4kEeuq2sPgw" target="_blank">Peregrino de TI</a>
         </p>
     </footer>

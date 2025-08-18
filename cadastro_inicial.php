@@ -91,21 +91,18 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
 </head>
 
 <body>
-    <header id="topo">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">TDS WEB 2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php"><i class="fas fa-id-card"></i>&nbsp;Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<header id="topo">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success d-flex justify-content-between">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center me-2" href="index.php">
+            <img src="imagens/logo.png" alt="Logo" class="img-fluid" style="max-height:40px;">
+        </a>
+
+        <a href="login.php">
+            <button type="button" class="btn text-black bg-white">Voltar para login</button>
+        </a>
+    </div>
+</nav>
     </header>
     <main class="form-cadastro">
         <?php
@@ -120,7 +117,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         }
         unset($_SESSION["erros"]);
         ?>
-        <h4>Cadastro inicial do usuário</h4>
+        <h4 class="mb-3">Cadastro inicial do usuário</h4>
         <form id="usuario_cadastro" action="cadastro_inicial.php" method="post">
             <div class="row mb-3">
                 <label for="nome" class="col-sm-2 col-form-label col-form-label">Nome</label>
@@ -146,7 +143,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
                     <input type="password" class="form-control form-control" maxlength="10" id="senha" name="senha" value="<?php echo isset($_SESSION['dados']['senha']) ? $_SESSION['dados']['senha'] : '' ?>">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="botao_cadastrar">Cadastrar</button>
+            <button type="submit" class="btn btn-success" id="botao_cadastrar">Cadastrar</button>
             <button type="reset" class="btn btn-secondary" id="botao_limpar">Limpar</button>
         </form>
         <?php
@@ -160,7 +157,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
             &copy; 2021–<script>
                 document.write(new Date().getFullYear())
             </script>
-            | Syscash - O Seu Sistema de Finanças | Alexandre -
+            | Syscash - O Seu Sistema de Finanças | <a href="https://github.com/GustavoBrDev">Gustavo Stinghen</a> & Alexandre -
             <a href="https://www.youtube.com/channel/UCUeidwLoy7YK4kEeuq2sPgw" target="_blank">Peregrino de TI</a>
         </p>
     </footer>

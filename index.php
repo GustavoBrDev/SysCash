@@ -15,33 +15,15 @@
 
 <body>
     <header id="topo">
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success d-flex justify-content-between">
     <div class="container-fluid">
-        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center me-2" href="index.php">
             <img src="imagens/logo.png" alt="Logo" class="img-fluid" style="max-height:40px;">
         </a>
 
-        <!-- Botão hamburguer (mobile) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item me-2">
-                    <a class="nav-link active text-white" aria-current="page" href="index.php">
-                        <i class="fas fa-home"></i>&nbsp;Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="login.php">
-                        <i class="fas fa-id-card"></i>&nbsp;Login
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <a href="login.php">
+            <button type="button" class="btn text-black bg-white">Entrar</button>
+        </a>
     </div>
 </nav>
     </header>
@@ -145,12 +127,8 @@
                     </h2>
                     <p class="lead">Controle suas finanças de forma efetiva!</p>
                 </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Syscash</title>
-                        <rect width="100%" height="100%" fill="#eee" />
-                        <text x="50%" y="50%" fill="#aaa" dy=".3em">Syscash</text>
-                    </svg>
+                <div class="col-md-5 d-flex justify-content-center align-content-center">
+                    <img src="imagens/logo.png" alt="Logo" class="img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <!-- Fim restante conteúdo -->
@@ -166,7 +144,7 @@
             &copy; 2021–<script>
                 document.write(new Date().getFullYear())
             </script>
-            | Syscash - O Seu Sistema de Finanças | Alexandre -
+            | Syscash - O Seu Sistema de Finanças | <a href="https://github.com/GustavoBrDev">Gustavo Stinghen</a> & Alexandre -
             <a href="https://www.youtube.com/channel/UCUeidwLoy7YK4kEeuq2sPgw" target="_blank">Peregrino de TI</a>
         </p>
         <div class="text-center">
